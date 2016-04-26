@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">NutraNinja</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="welcome">Welcome to NutraNinja!</string>
+
+    <string name="level11">Complete one round of level one.</string>
+    <string name="level21">Complete one round of level two.</string>
+    <string name="level31">Complete one round of level three.</string>
+    <string name="level41">Complete one round of level four.</string>
+
+    <string name="level12">Complete two rounds of level one.</string>
+    <string name="level22">Complete two rounds of level two.</string>
+    <string name="level32">Complete two rounds of level three.</string>
+    <string name="level42">Complete two rounds of level four.</string>
+
+    <string name="level13">Complete three rounds of level one.</string>
+    <string name="level23">Complete three rounds of level two.</string>
+    <string name="level33">Complete three rounds of level three.</string>
+    <string name="level43">Complete three rounds of level four.</string>
+
+    <string name="rest">Rest day!</string>
+
+    <string name="rest1">Rest for 15 seconds.</string>
+    <string name="rest2">Rest for 30 seconds.</string>
+    <string name="break1">Two minute water break.</string>
+    <string name="repeat2">Repeat two more times for three sets.</string>
+    <string name="repeat3">Repeat three more times for four sets.</string>
+    <string name="title_activity_monday">MondayActivity</string>
+</resources>

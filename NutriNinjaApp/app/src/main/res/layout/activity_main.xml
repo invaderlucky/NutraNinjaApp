@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lucky.nutrininjaapp.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/sundayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/mondayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_toRightOf="@+id/sundayButton"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:id="@+id/tuesdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tuesday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_below="@+id/sundayButton" />
+
+    <Button
+        android:id="@+id/wednesdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wednesday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_toRightOf="@+id/tuesdayButton"
+        android:layout_below="@+id/mondayButton"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/thursdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thursday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_below="@+id/tuesdayButton"/>
+
+    <Button
+        android:id="@+id/fridayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_toRightOf="@+id/thursdayButton"
+        android:layout_below="@+id/wednesdayButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/saturdayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saturday"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/thursdayButton"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start daily alarm"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saturdayButton"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop repeating alarm"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

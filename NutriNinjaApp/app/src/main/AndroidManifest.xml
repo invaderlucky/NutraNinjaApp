@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lucky.nutrininjaapp">
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ninja"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Main Acitivity, aka home screen for the app -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sunday activity, parent is home screen so the up button will work -->
+        <activity
+            android:name=".SundayActivity"
+            android:label="@string/sunday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Monday -->
+        <activity
+            android:name=".MondayActivity"
+            android:label="@string/monday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Tuesday -->
+        <activity
+            android:name=".TuesdayActivity"
+            android:label="@string/tuesday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Wednesday -->
+        <activity
+            android:name=".WednesdayActivity"
+            android:label="@string/wednesday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Thursday -->
+        <activity
+            android:name=".ThursdayActivity"
+            android:label="@string/thursday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Friday -->
+        <activity
+            android:name=".FridayActivity"
+            android:label="@string/friday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Saturday -->
+        <activity
+            android:name=".SaturdayActivity"
+            android:label="@string/saturday"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- The activity that controls the alarm -->
+        <activity android:name=".AlarmReceiverActivity"
+            android:label="Alarm Receiver"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+
+        <!-- Not used but too scared to remove -->
+        <activity android:name=".MoreInfoNotification"
+            android:label="More Notification"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="lucky.nutrininjaapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
